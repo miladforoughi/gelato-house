@@ -1,10 +1,12 @@
+import { Layout } from './components/layout/index'
+
 function App() {
   return (
-    <>
-      <div className='container-fluid mx-auto text-center'>
-        <h1 className='bg-blue-500 text-white'>Hello World</h1>
+    <Layout>
+      <div className='container-fluid bg-gray-400'>
+        <p className='text-center text-white'>جلاتو هاوس</p>
       </div>
-    </>
+    </Layout>
   )
 }
 
