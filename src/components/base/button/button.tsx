@@ -25,22 +25,22 @@ const variants = {
 }
 
 const sizes = {
-  sm: 'px-2 py-1 text-sm',
-  md: 'px-4 py-2 text-base',
-  lg: 'px-6 py-3 text-lg',
+  sm: 'px-4 py-1 text-sm',
+  md: 'px-6 py-2 text-base',
+  lg: 'px-8 py-3 text-lg',
 }
 
 export const Button: React.FC<ButtonProps> = ({
   variant = 'contained',
   className = '',
-  color = 'primary',
+  colors = 'primary',
   size = 'md',
   children,
   ...props
 }): JSX.Element => {
   return (
     <button
-      className={`${buttonBaseStyle} ${variants[variant][color]} ${sizes[size]} ${className}`}
+      className={`${buttonBaseStyle} ${variants[variant][colors]} ${sizes[size]} ${className}`}
       {...props}
     >
       {children}

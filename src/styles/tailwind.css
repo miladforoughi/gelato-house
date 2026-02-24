@@ -26,3 +26,18 @@
   --color-secondary-900: #74157a;
   --color-secondary-950: #4e0052;
 }
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/fonts/Vazir.eot');
+  src:
+    url('/assets/fonts/Vazir.eot?#iefix') format('FontName-opentype'),
+    url('/assets/fonts/Vazir.woff') format('woff'),
+    url('/assets/fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Vazir';
+}
